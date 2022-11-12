@@ -33,8 +33,8 @@ export class Util {
   }
 
   public static PlaySound() {
-    //let audio = new Audio("./sound.ogg");
-    //audio.volume = 0.5;
-    //audio.play();
+    let audio = new Audio("./sound.ogg");
+    audio.volume = 0.5;
+    audio.play();
   }
 }
