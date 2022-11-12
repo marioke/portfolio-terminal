@@ -43,7 +43,7 @@ export class WhoisCommand implements Command {
       .addNewLine()
       .addLine("<b>Was treibt mich an?</b>")
       .addLine(
-        "Steve Jobs sagste einmal: The only way to do great work is to love what you do."
+        "Steve Jobs sagte einmal: The only way to do great work is to love what you do."
       )
       .addLine(
         "Ich liebe es einfach, komplexe Probleme zu lösen und dabei neue Technologien zu entdecken."
