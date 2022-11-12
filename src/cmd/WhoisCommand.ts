@@ -10,7 +10,7 @@ export class WhoisCommand implements Command {
   async execute() {
     var builder = new TextBuilder()
       .addNewLine()
-      .addImage("./img/giphy.gif")
+      .addImage("./assets/img/giphy.gif")
       .addNewLine()
       .addLine("Hallo, ich bin Mario! 👋")
       .addLine(

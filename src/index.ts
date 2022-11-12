@@ -102,6 +102,9 @@ setTimeout(async () => {
   await Terminal.init();
 }, 1000);
 
+console.log("%cHier könnte Ihre Werbung stehen.", "font-size: 20px;");
 console.log(
-  "Hier könnte Ihre Werbung stehen. Kontaktiere mich unter contact@marioke.dev. Schon ab 5€/Pixel im Monat."
+  "%cKontaktiere mich unter contact@marioke.dev.",
+  "font-size: 20px;"
 );
+console.log("%cSchon ab 5€/Pixel im Monat.", "font-size: 20px;");
