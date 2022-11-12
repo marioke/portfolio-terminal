@@ -43,14 +43,6 @@ export class Terminal {
 
     Util.track("init");
 
-    window.onbeforeunload = (event) => {
-      // NOTE: blocked on most browsers
-      //alert(
-      //  "Bist du wirklich sicher, dass du schon alle Easter Eggs gefunden hast? 👀"
-      //);
-      //event.preventDefault();
-    };
-
     // event when pressing ctrl + c
     document.addEventListener("keydown", (event) => {
       if (event.ctrlKey && event.key === "c") {
@@ -154,7 +146,7 @@ export class Terminal {
     if (navigator.vibrate) {
       navigator.vibrate(200);
     }
-    //window.location.hash = encodeURIComponent(cmd);
+
     await Terminal.execute(cmd);
   }
 
