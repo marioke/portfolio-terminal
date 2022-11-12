@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ES2022",
+        "skipLibCheck": false,
+        "preserveConstEnums": true,
+        "allowJs": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "outDir": "assets/js",
+        "rootDirs": [
+            "src"
+        ],
+        "baseUrl": "./"
+    },
+    "include": [
+        "src",
+        "test"
+    ],
+    "exclude": [
+        "out",
+        "node_modules"
+    ]
+}

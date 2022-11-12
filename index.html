@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Mario Kernich - Software Engineer & Web Entwickler</title>
+    <meta
+      name="description"
+      content="Hey, mein Name ist Mario - leidenschaftlicher Programmierer mit über zehn Jahren Erfahrung. Erfahre hier mehr über mich und meine Arbeit."
+    />
+    <link rel="canonical" href="https:/marioke.dev/" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Mario Kernich - Software Engineer & Web Entwickler"
+    />
+    <meta property="og:image" content="https://marioke.dev/thumb.jpg" />
+    <meta
+      property="og:description"
+      content="Hey, mein Name ist Mario - leidenschaftlicher Programmierer mit über zehn Jahren Erfahrung. Erfahre hier mehr über mich und meine Arbeit."
+    />
+    <meta property="og:url" content="https://marioke.dev/" />
+    <meta property="og:site_name" content="Mario Kernich" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/terminal.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/icons.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+  </head>
+  <body>
+    <div id="terminal">
+      <a id="before"></a>
+    </div>
+    <div id="command" onclick="document.getElementById('texter').focus();">
+      <textarea
+        type="text"
+        id="texter"
+        onkeyup="onTyping(this, event)"
+        onkeydown="onTyping(this, event); 
+                   onMoving(this.value.length, event)"
+        onkeypress="onTyping(this, event);"
+      ></textarea>
+      <div id="liner">
+        <span id="typer"></span><b class="cursor" id="cursor">█</b>
+      </div>
+    </div>
+    <script>
+      const script = document.createElement("script");
+      script.src = `assets/js/index.js?v=${Date.now()}`;
+      script.type = "module";
+      document.body.appendChild(script);
+    </script>
+    <div class="footer-menu">
+      <a href="/imprint.html">Impressum</a>
+      <a href="/privacy-policy.html">Datenschutzerklärung</a>
+    </div>
+    <div class="loader" id="cat">
+      <div class="wrapper">
+        <div class="rainbow">
+          <span></span>
+        </div>
+        <div class="nyan-cat">
+          <div class="feet"></div>
+          <div class="tail">
+            <span></span>
+          </div>
+          <div class="body"></div>
+          <div class="head"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

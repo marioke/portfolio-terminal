@@ -1,0 +1,87 @@
+:root {
+  --text-color: #007bc3;
+  --terminal-background-color: #1c1c1c;
+  --terminal-command-color: #05bc7b;
+  --selection-text-color: #211830;
+  --selection-background-color: #0e817e;
+  --terminal-cursor-color: #73ABAD;
+  --terminal-cmd-input-color: #73ABAD;
+  --link-color: #9C8394;
+}
+
+body {
+  font-family: 'Consolas', Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+::selection {
+  color: var(--selection-text-color);
+  background-color: var(--selection-background-color);
+}
+
+::-moz-selection {
+  color: var(--selection-text-color);
+  background-color: var(--selection-background-color);
+}
+
+.inherit,
+a {
+  color: var(--link-color);
+}
+
+a,
+.command {
+  color: var(--link-color);
+  text-decoration: inherit;
+}
+
+a:hover,
+.command:hover {
+  background: #73ABAD;
+  color: #211830;
+}
+
+a:focus {
+  outline: 0;
+}
+
+.footer-menu {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.footer-menu a {
+  margin-right: 10px;
+  opacity: 0.7;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus {
+  opacity: 1;
+}
+
+.no-animation {
+  animation: typing 0 steps(30, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@media(max-width: 480px) {
+  .hm {
+    display:none;
+  }
+}
