@@ -142,11 +142,6 @@ export class Terminal {
     if (Util.isMobile()) {
       Terminal.blur();
     }
-    Util.PlaySound();
-    if (navigator.vibrate) {
-      navigator.vibrate(200);
-    }
-
     await Terminal.execute(cmd);
   }
 
