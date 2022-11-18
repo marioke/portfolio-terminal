@@ -1,94 +1,168 @@
 <!DOCTYPE html>
 <html lang="de-DE">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="robots"
-      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <title>Mario Kernich - Software Engineer & Web Entwickler</title>
-    <meta
-      name="description"
-      content="Hey, mein Name ist Mario - leidenschaftlicher Programmierer mit über zehn Jahren Erfahrung. Erfahre hier mehr über mich und meine Arbeit."
-    />
-    <link rel="canonical" href="https:/marioke.dev/" />
-    <meta property="og:locale" content="de_DE" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Mario Kernich - Software Engineer & Web Entwickler"
-    />
-    <meta
-      property="og:image"
-      content="https://marioke.dev/assets/img/thumb.jpg"
-    />
-    <meta
-      property="og:description"
-      content="Hey, mein Name ist Mario - leidenschaftlicher Programmierer mit über zehn Jahren Erfahrung. Erfahre hier mehr über mich und meine Arbeit."
-    />
-    <meta property="og:url" content="https://marioke.dev/" />
-    <meta property="og:site_name" content="Mario Kernich" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="assets/css/terminal.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="assets/css/icons.css"
-    />
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
-  </head>
-  <body>
-    <div id="terminal">
-      <a id="before"></a>
-    </div>
-    <div id="command" onclick="document.getElementById('texter').focus();">
-      <textarea
-        type="text"
-        id="texter"
-        onkeyup="onTyping(this, event)"
-        onkeydown="onTyping(this, event); 
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="robots"
+            content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
+        <title>Mario Kernich - Software Engineer & Web Entwickler</title>
+        <meta
+            name="description"
+            content="Hey, mein Name ist Mario - leidenschaftlicher Programmierer mit über zehn Jahren Erfahrung. Erfahre hier mehr über mich und meine Arbeit."
+        />
+        <link rel="canonical" href="https:/marioke.dev/" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="Mario Kernich - Software Engineer & Web Entwickler"
+        />
+        <meta
+            property="og:image"
+            content="https://marioke.dev/assets/img/thumb.jpg"
+        />
+        <meta
+            property="og:description"
+            content="Hey, mein Name ist Mario - leidenschaftlicher Programmierer mit über zehn Jahren Erfahrung. Erfahre hier mehr über mich und meine Arbeit."
+        />
+        <meta property="og:url" content="https://marioke.dev/" />
+        <meta property="og:site_name" content="Mario Kernich" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+    </head>
+    <body>
+        <div class="term">
+            <div id="terminal">
+                <a id="before"></a>
+            </div>
+            <div
+                id="command"
+                onclick="document.getElementById('texter').focus();"
+            >
+                <textarea
+                    type="text"
+                    id="texter"
+                    onkeyup="onTyping(this, event)"
+                    onkeydown="onTyping(this, event); 
                    onMoving(this.value.length, event)"
-        onkeypress="onTyping(this, event);"
-      ></textarea>
-      <div id="liner">
-        <span id="typer"></span><b class="cursor" id="cursor">█</b>
-      </div>
-    </div>
-    <script>
-      const script = document.createElement("script");
-      script.src = `assets/js/index.js?v=${Date.now()}`;
-      script.type = "module";
-      document.body.appendChild(script);
-    </script>
-    <div class="footer-menu">
-      <a href="/imprint.html">Impressum</a>
-      <a href="/privacy-policy.html">Datenschutzerklärung</a>
-    </div>
-    <div class="loader" id="cat">
-      <div class="wrapper">
-        <div class="rainbow">
-          <span></span>
+                    onkeypress="onTyping(this, event);"
+                ></textarea>
+                <div id="liner">
+                    <span id="typer"></span><b class="cursor" id="cursor">█</b>
+                </div>
+            </div>
         </div>
-        <div class="nyan-cat">
-          <div class="feet"></div>
-          <div class="tail">
-            <span></span>
-          </div>
-          <div class="body"></div>
-          <div class="head"></div>
+        <div class="footer-menu">
+            <a href="/imprint.html">Impressum</a>
+            <a href="/privacy-policy.html">Datenschutzerklärung</a>
         </div>
-      </div>
-    </div>
-  </body>
+        <div class="loader" id="cat">
+            <div class="wrapper">
+                <div class="rainbow">
+                    <span></span>
+                </div>
+                <div class="nyan-cat">
+                    <div class="feet"></div>
+                    <div class="tail">
+                        <span></span>
+                    </div>
+                    <div class="body"></div>
+                    <div class="head"></div>
+                </div>
+            </div>
+        </div>
+        <div class="whatsapp-popup-wrapper" style="display: none">
+            <div class="whatsapp-popup">
+                <div class="whatsapp-header">
+                    <img src="./assets/img/mario-kernich.jpg" />
+                    <div>
+                        <b>Mario Kernich</b><br />Software Engineer und Web
+                        Entwickler
+                    </div>
+                    <button class="whatsapp-popup-close" id="close-wa-popup">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                            width="20px"
+                            height="20px"
+                        >
+                            <path
+                                d="M294.6 166.6L317.3 144 272 98.7l-22.6 22.6L160 210.7 70.6 121.4 48 98.7 2.7 144l22.6 22.6L114.7 256 25.4 345.4 2.7 368 48 413.3l22.6-22.6L160 301.3l89.4 89.4L272 413.3 317.3 368l-22.6-22.6L205.3 256l89.4-89.4z"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <div class="whatsapp-popup-inner">
+                    <div class="wa-dummy-message">
+                        Hallo 👋<br /><br />
+                        Du suchst professionelle Unterstützung für dein nächstes
+                        Projekt? 👨‍💻<br /><br />
+                        Teile mir einfach ein paar Details mit und ich berate
+                        dich gerne kostenlos und unverbindlich.️<br /><br />
+                        Ich antworten Dir so schnell wie möglich 🙂
+                    </div>
+                </div>
+                <div class="whatsapp-popup-footer">
+                    <a
+                        href="https://wa.me/%2B4915110573779"
+                        target="_blank"
+                        class="whatsapp-popup-button"
+                        id="wa-external-link"
+                        >Chat starten</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <a
+            class="whatsapp"
+            target="_blank"
+            alt="WhatsApp öffnen"
+            rel="external"
+            id="show-wa-popup"
+        >
+            <i class="icon-whatsapp"></i>
+        </a>
+        <script>
+            addScript("assets/js/index.js");
+            addStylesheet("assets/css/terminal.css");
+            addStylesheet("assets/css/icons.css");
+            addStylesheet("assets/css/wa.css");
+
+            function addScript(url) {
+                const script = document.createElement("script");
+                script.src = `${url}?v=${Date.now()}`;
+                script.type = "module";
+                document.body.appendChild(script);
+            }
+
+            function addStylesheet(url) {
+                const link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.href = `${url}?v=${Date.now()}`;
+                document.head.appendChild(link);
+            }
+
+            document
+                .getElementById("close-wa-popup")
+                .addEventListener("click", function () {
+                    document.querySelector(
+                        ".whatsapp-popup-wrapper"
+                    ).style.display = "none";
+                });
+            document
+                .getElementById("show-wa-popup")
+                .addEventListener("click", function () {
+                    document.querySelector(
+                        ".whatsapp-popup-wrapper"
+                    ).style.display = "block";
+                });
+        </script>
+    </body>
 </html>
