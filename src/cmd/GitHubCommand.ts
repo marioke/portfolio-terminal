@@ -7,7 +7,7 @@ export class GitHubCommand implements Command {
   aliases = ["git", "gh"];
 
   async execute() {
-    await Terminal.writeln("Github wird geöffnet...", "color2", 80);
+    await Terminal.writeln("Github wird geöffnet...", "color2");
     setTimeout(() => {
       window.open(Globals.github.url);
     }, 1000);
