@@ -8,7 +8,7 @@ export class WhoisCommand implements Command {
   aliases = ["weristmario", "mario", "super-mario"];
 
   async execute() {
-    var builder = new TextBuilder()
+    const builder = new TextBuilder()
       .addNewLine()
       .addImage("./assets/img/giphy.gif")
       .addNewLine()
