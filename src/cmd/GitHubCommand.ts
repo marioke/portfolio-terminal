@@ -3,13 +3,13 @@ import { Command } from "../Command.js";
 import { Globals } from "../Globals.js";
 
 export class GitHubCommand implements Command {
-  name = "github";
-  aliases = ["git", "gh"];
+    name = "github";
+    aliases = ["git", "gh"];
 
-  async execute() {
-    await Terminal.writeln("Github wird geöffnet...", "color2");
-    setTimeout(() => {
-      window.open(Globals.github.url);
-    }, 1000);
-  }
+    async execute() {
+        await Terminal.writeln("Github wird geöffnet...", "color2");
+        setTimeout(() => {
+            window.open(Globals.github.url);
+        }, 1000);
+    }
 }

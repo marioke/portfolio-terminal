@@ -9,17 +9,9 @@
         "strictNullChecks": true,
         "strictPropertyInitialization": true,
         "outDir": "assets/js",
-        "rootDirs": [
-            "src"
-        ],
+        "rootDirs": ["src"],
         "baseUrl": "./"
     },
-    "include": [
-        "src",
-        "test"
-    ],
-    "exclude": [
-        "out",
-        "node_modules"
-    ]
+    "include": ["src", "test"],
+    "exclude": ["out", "node_modules"]
 }

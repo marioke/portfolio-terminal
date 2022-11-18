@@ -1,11 +1,11 @@
 {
-  "scripts": {
-    "watch": "tsc --watch"
-  },
-  "devDependencies": {
-    "typescript": "^4.8.4"
-  },
-  "dependencies": {
-    "amd-loader": "^0.0.8"
-  }
+    "scripts": {
+        "watch": "tsc --watch"
+    },
+    "devDependencies": {
+        "typescript": "^4.8.4"
+    },
+    "dependencies": {
+        "amd-loader": "^0.0.8"
+    }
 }

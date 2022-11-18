@@ -19,14 +19,8 @@
         <link rel="canonical" href="https:/marioke.dev/" />
         <meta property="og:locale" content="de_DE" />
         <meta property="og:type" content="website" />
-        <meta
-            property="og:title"
-            content="Mario Kernich - Software Engineer & Web Entwickler"
-        />
-        <meta
-            property="og:image"
-            content="https://marioke.dev/assets/img/thumb.jpg"
-        />
+        <meta property="og:title" content="Mario Kernich - Software Engineer & Web Entwickler" />
+        <meta property="og:image" content="https://marioke.dev/assets/img/thumb.jpg" />
         <meta
             property="og:description"
             content="Hey, mein Name ist Mario - leidenschaftlicher Programmierer mit über zehn Jahren Erfahrung. Erfahre hier mehr über mich und meine Arbeit."
@@ -41,10 +35,7 @@
             <div id="terminal">
                 <a id="before"></a>
             </div>
-            <div
-                id="command"
-                onclick="document.getElementById('texter').focus();"
-            >
+            <div id="command" onclick="document.getElementById('texter').focus();">
                 <textarea
                     type="text"
                     id="texter"
@@ -53,9 +44,7 @@
                    onMoving(this.value.length, event)"
                     onkeypress="onTyping(this, event);"
                 ></textarea>
-                <div id="liner">
-                    <span id="typer"></span><b class="cursor" id="cursor">█</b>
-                </div>
+                <div id="liner"><span id="typer"></span><b class="cursor" id="cursor">█</b></div>
             </div>
         </div>
         <div class="footer-menu">
@@ -81,10 +70,7 @@
             <div class="whatsapp-popup">
                 <div class="whatsapp-header">
                     <img src="./assets/img/mario-kernich.jpg" />
-                    <div>
-                        <b>Mario Kernich</b><br />Software Engineer und Web
-                        Entwickler
-                    </div>
+                    <div><b>Mario Kernich</b><br />Software Engineer und Web Entwickler</div>
                     <button class="whatsapp-popup-close" id="close-wa-popup">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -101,10 +87,9 @@
                 <div class="whatsapp-popup-inner">
                     <div class="wa-dummy-message">
                         Hallo 👋<br /><br />
-                        Du suchst professionelle Unterstützung für dein nächstes
-                        Projekt? 👨‍💻<br /><br />
-                        Teile mir einfach ein paar Details mit und ich berate
-                        dich gerne kostenlos und unverbindlich.️<br /><br />
+                        Du suchst professionelle Unterstützung für dein nächstes Projekt? 👨‍💻<br /><br />
+                        Teile mir einfach ein paar Details mit und ich berate dich gerne kostenlos
+                        und unverbindlich.️<br /><br />
                         Ich antworten Dir so schnell wie möglich 🙂
                     </div>
                 </div>
@@ -120,13 +105,7 @@
             </div>
         </div>
 
-        <a
-            class="whatsapp"
-            target="_blank"
-            alt="WhatsApp öffnen"
-            rel="external"
-            id="show-wa-popup"
-        >
+        <a class="whatsapp" target="_blank" alt="WhatsApp öffnen" rel="external" id="show-wa-popup">
             <i class="icon-whatsapp"></i>
         </a>
         <script>
@@ -149,20 +128,12 @@
                 document.head.appendChild(link);
             }
 
-            document
-                .getElementById("close-wa-popup")
-                .addEventListener("click", function () {
-                    document.querySelector(
-                        ".whatsapp-popup-wrapper"
-                    ).style.display = "none";
-                });
-            document
-                .getElementById("show-wa-popup")
-                .addEventListener("click", function () {
-                    document.querySelector(
-                        ".whatsapp-popup-wrapper"
-                    ).style.display = "block";
-                });
+            document.getElementById("close-wa-popup").addEventListener("click", function () {
+                document.querySelector(".whatsapp-popup-wrapper").style.display = "none";
+            });
+            document.getElementById("show-wa-popup").addEventListener("click", function () {
+                document.querySelector(".whatsapp-popup-wrapper").style.display = "block";
+            });
         </script>
     </body>
 </html>
