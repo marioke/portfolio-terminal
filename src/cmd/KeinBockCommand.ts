@@ -6,7 +6,7 @@ export class KeinBockCommand implements Command {
   aliases = ["keinbock", "bocklos", "direkt-kein-bock", "ke-bock"];
 
   async execute() {
-    await Terminal.writeln("Ich auch nicht... 🤯", "color2", 80);
+    await Terminal.writeln("Ich auch nicht... 🤯", "color2");
     setTimeout(() => {
       window.open(
         "https://www.youtube.com/watch?v=LMBTAdAuM8w&ab_channel=Stonedeafproduction"
