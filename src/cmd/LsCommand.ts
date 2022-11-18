@@ -3,7 +3,7 @@ import { Command } from "../Command.js";
 
 export class LsCommand implements Command {
   name = "ls";
-  description = "Listet alle Programme auf";
+  description = "Listet alle Programme";
   aliases = ["dir", "list"];
 
   async execute() {
@@ -17,8 +17,14 @@ export class LsCommand implements Command {
 
     const lines = [];
 
-    for (let i = 0; i < list.length; i += 4) {
-      const line = list.slice(i, i + 4);
+    let entriesPerLine = 4;
+
+    if (window.innerWidth < 768) {
+      entriesPerLine = 2;
+    }
+
+    for (let i = 0; i < list.length; i += entriesPerLine) {
+      const line = list.slice(i, i + entriesPerLine);
 
       for (let j = 0; j < line.length; j++) {
         line[j] += " ".repeat(longest.length - line[j].length + 2);
