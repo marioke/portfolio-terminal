@@ -34,6 +34,8 @@ import { TouchCommand } from "./cmd/TouchCommand.js";
 import { PingCommand } from "./cmd/PingCommand.js";
 import { UnameCommand } from "./cmd/UnameCommand.js";
 import { BADIHitsCommand } from "./cmd/BADIHitsCommand.js";
+import { WhatsAppCommand } from "./cmd/WhatsAppCommand.js";
+import { ReviewsCommand } from "./cmd/ReviewsCommand.js";
 
 function $<TElement extends HTMLElement>(selector: string): TElement {
   return document.getElementById(selector) as TElement;
@@ -92,6 +94,8 @@ Terminal.registerCommands([
   new PingCommand(),
   new UnameCommand(),
   new BADIHitsCommand(),
+  new WhatsAppCommand(),
+  new ReviewsCommand(),
   new HelpCommand(),
   new HistoryCommand(),
   new ClearCommand(),
