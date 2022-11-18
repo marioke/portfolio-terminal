@@ -37,8 +37,7 @@ export class SkillsCommand implements Command {
       .addColumn(
         "linux/bash",
         "Allgemeine Administration, SSH, Systemd, MariaDB, MySQL, Nginx, Apache2"
-      )
-      .addColumn("Hosting", "Hetzner, PhpFriends, Raidboxes");
+      );
 
     await Terminal.writelns(table.toArray(), "color2 margin");
   }
