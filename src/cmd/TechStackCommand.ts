@@ -4,7 +4,7 @@ import { TableBuilder } from "../TableBuilder.js";
 
 export class TechStackCommand implements Command {
   name = "techstack";
-  description = "Technologien / Tech-Stack";
+  description = "Meine Werkzeuge";
   aliases = ["tech", "stack", "tech-stack", "techs", "tools"];
 
   async execute() {
