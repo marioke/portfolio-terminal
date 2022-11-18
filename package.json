@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "watch": "tsc --watch"
+        "watch": "tsc --watch",
+        "ts-check": "tsc --noEmit"
     },
     "devDependencies": {
         "typescript": "^4.8.4"
