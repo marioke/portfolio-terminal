@@ -1,0 +1,45 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": {
+        "editor.formatOnSave": true
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.guides.bracketPairs": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.renderWhitespace": "all",
+    "editor.stickyScroll.enabled": true,
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 4,
+    "editor.useTabStops": true,
+    "liveServer.settings.ignoreFiles": [
+        "**/.vscode/**",
+        "**/node_modules/**",
+        "**/*.ts"
+    ],
+    "npm.enableRunFromFolder": true,
+    "prettier.bracketSpacing": true,
+    "prettier.printWidth": 100,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "none",
+    "prettier.useTabs": false,
+    "search.exclude": {
+        "**/node_modules": true
+    },
+    "search.quickOpen.history.filterSortOrder": "recency",
+    "search.quickOpen.includeHistory": false,
+    "typescript.autoClosingTags": false,
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.updateImportsOnFileMove.enabled": "always"
+}
