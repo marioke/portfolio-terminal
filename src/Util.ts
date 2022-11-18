@@ -31,10 +31,4 @@ export class Util {
       console.warn(e);
     }
   }
-
-  public static PlaySound() {
-    let audio = new Audio("./sound.ogg");
-    audio.volume = 0.5;
-    audio.play();
-  }
 }
