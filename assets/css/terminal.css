@@ -6,22 +6,26 @@ body {
   padding: 15px 20px;
   min-height: 99%;
   width: 100%;
-  color: var(--text-color);
   background:var(--terminal-background-color);
   overflow-x: hidden;
+  padding-bottom:40px;
 }
 
-textarea {
+.term {
+  color: var(--text-color);
+}
+
+.term textarea {
   left: -1000px;
   position: absolute;
 }
 
-b {
+.term b {
   font-weight: bold;
   text-decoration: underline;
 }
 
-.cursor {
+.term .cursor {
   font-size: 12px;
   color: var(--terminal-cursor-color);
   background-color: var(--terminal-cursor-color);
@@ -44,14 +48,14 @@ b {
   }
 }
 
-#command {
+.term #command {
   cursor: text;
   height: 50px;
   color: #73ABAD;
   
 }
 
-#liner {
+.term #liner {
   line-height: 1.3em;
   margin-top: -2px;
   animation: show 0.5s ease forwards;
@@ -59,7 +63,7 @@ b {
   opacity: 0;
 }
 
-#liner::before {
+.term #liner::before {
   color: var(--text-color);
   content: "besucher@marioke.dev:~$";
   letter-spacing: 0.8px;
@@ -74,35 +78,35 @@ b {
   }
 }
 
-.index {
+.term .index {
   color: #DCDCCC;
 }
 
-.color2 {
+.term .color2 {
   color: #B89076;
 }
 
-.command {
+.term .command {
   cursor: pointer;
 }
 
-.error {
+.term .error {
   color: #B89076;
 }
 
-.white {
+.term .white {
   color: #fff;
 }
 
-.cmd {
+.term .cmd {
   color: var(--terminal-cmd-input-color);
 }
 
-.color-grey {
+.term .color-grey {
   color: rgb(128, 128, 128);
 }
 
-.loader {
+.term .loader {
   position: fixed;
   top:0;
   left:0;
@@ -114,7 +118,7 @@ b {
   text-align: center;
 }
 
-p {
+.term p {
   display: block;
   line-height: 1.3em;
   margin: 0;
@@ -122,7 +126,7 @@ p {
 }
 
 @media(max-width: 768px) {
-  p {
+  .term p {
     animation: none;
     white-space: normal;
     overflow: visible;
@@ -130,13 +134,13 @@ p {
 }
 
 @media(min-width: 768px) {
-  p {
+  .term p {
     animation: typing 0.5s steps(30, end);
     overflow: hidden;
     white-space: nowrap;
   }
 
-  .margin {
+  .term .margin {
     margin-left: 20px;
   }
 

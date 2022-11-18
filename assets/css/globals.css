@@ -11,6 +11,7 @@
 
 body {
   font-family: 'Consolas', Courier, monospace;
+  padding-bottom:50px;
 }
 
 * {
@@ -51,14 +52,15 @@ a:focus {
 }
 
 .footer-menu {
+
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
 }
 
 .footer-menu a {
   margin-right: 10px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .footer-menu a:hover,
