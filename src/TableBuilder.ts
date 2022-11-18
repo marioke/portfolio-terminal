@@ -22,26 +22,33 @@ export class TableBuilder {
       list.push("<br>");
     }
 
-    const longestKeyLength = Object.keys(this.columns).reduce((a, b) =>
-      a.length > b.length ? a : b
-    ).length;
+    if (window.innerWidth < 768) {
+      for (const [name, value] of Object.entries(this.columns)) {
+        list.push(`${name}<br>`);
+        list.push(`${value}`);
+        list.push("<br>");
+      }
+    } else {
+      const longestKeyLength = Object.keys(this.columns).reduce((a, b) =>
+        a.length > b.length ? a : b
+      ).length;
 
-    // print table
-    Object.keys(this.columns).forEach((key) => {
-      const value = this.columns[key];
-      const valueParts = value.split(" ");
+      Object.keys(this.columns).forEach((key) => {
+        const value = this.columns[key];
+        const valueParts = value.split(" ");
 
-      let line = `${key.padEnd(longestKeyLength + TableBuilder.letterSpace)}`;
-      valueParts.forEach((part) => {
-        if (line.length + part.length > TableBuilder.lineMaxLength) {
-          list.push(line);
-          line = " ".repeat(longestKeyLength + TableBuilder.letterSpace);
-        }
-        line += part + " ";
+        let line = `${key.padEnd(longestKeyLength + TableBuilder.letterSpace)}`;
+        valueParts.forEach((part) => {
+          if (line.length + part.length > TableBuilder.lineMaxLength) {
+            list.push(line);
+            line = " ".repeat(longestKeyLength + TableBuilder.letterSpace);
+          }
+          line += part + " ";
+        });
+        list.push(line);
+        list.push("<br>");
       });
-      list.push(line);
-      list.push("<br>");
-    });
+    }
 
     return list;
   }
